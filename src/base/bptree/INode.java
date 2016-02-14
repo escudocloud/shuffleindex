@@ -92,6 +92,8 @@ public class INode<Key extends Comparable<? super Key>, Value> extends Node<Key,
         children = new long[N+1];
         
 		ByteBuffer bBuffer;
+		StringBuffer sBuffer;
+		
 		
 		bBuffer = ByteBuffer.wrap(nodeBytes,0,4);
 		IntBuffer iBuffer = bBuffer.asIntBuffer();
@@ -99,6 +101,8 @@ public class INode<Key extends Comparable<? super Key>, Value> extends Node<Key,
         
 		bBuffer = ByteBuffer.wrap(nodeBytes,4,(2*N+4)*8);
 		LongBuffer lBuffer = bBuffer.asLongBuffer();
+		
+		
 		
 		nonce = lBuffer.get();
 		pid = lBuffer.get();

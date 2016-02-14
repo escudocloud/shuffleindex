@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
 	<classpathentry kind="lib" path="lib/commons-daemon.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/umberto/workspace_tesi/SI_Single_Client/commons-csv-1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

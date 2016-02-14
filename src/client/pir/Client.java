@@ -163,7 +163,7 @@ public class Client {
 	 * 
 	 * @return the node list, the list is empty if no node is find. The null value is returned if occur an error.
 	 */
-	private  LinkedList<Node<Long,Long>> getNodes(LinkedList<Long> pids) {
+	public  LinkedList<Node<Long,Long>> getNodes(LinkedList<Long> pids) {
 		
 		if(socket != null) {
 			// long s1,e1,v1;

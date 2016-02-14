@@ -1,6 +1,9 @@
 package server.gui;
 
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
@@ -195,7 +198,14 @@ public class ServerGUI extends java.awt.Frame {
 	            	long start, end, time;
 	    			start = System.currentTimeMillis();	
 	    			
-	    			Database.create();
+	    			try {
+						Database.create();
+					} catch (FileNotFoundException e) {
+						updateLogWindow("File non trovato");
+						e.printStackTrace();
+					} catch (IOException e) {
+						updateLogWindow("Generic IO exception");
+					}
 	    			
 	    			end = System.currentTimeMillis();	
 	    			time = end - start;	

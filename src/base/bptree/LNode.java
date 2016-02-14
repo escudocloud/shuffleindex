@@ -340,6 +340,7 @@ public Key splitNodeInMemory(ArrayList<Node<Key, Value>> ns, DiskSuperBlock sup)
 		ByteBuffer bBuffer;
 		LongBuffer lBuffer;
 		IntBuffer iBuffer;
+		StringBuffer sBuffer = new StringBuffer();
 		
 		bBuffer = ByteBuffer.wrap(nodeBytes, 1+4, 3*8);
 		lBuffer = bBuffer.asLongBuffer();			
@@ -354,11 +355,18 @@ public Key splitNodeInMemory(ArrayList<Node<Key, Value>> ns, DiskSuperBlock sup)
 		for( int i=0 ; i<num ; i++)
 			lBuffer.put(Long.parseLong(keys[i].toString()));
 		
+		
+		
 		bBuffer = ByteBuffer.wrap(nodeBytes, 1+4+((3+M)*8), M*8);
 		lBuffer = bBuffer.asLongBuffer();
-		for( int i=0 ; i<num ; i++)
-			lBuffer.put(Long.parseLong(values[i].toString()));	
 		
+		
+		//Append strings to the string buffer in order to create string leaf nodes
+		for( int i=0 ; i<num ; i++){
+			sBuffer.append(values[i].toString());	
+		}
+		
+	
 		bBuffer = ByteBuffer.wrap(nodeBytes, 1, 4);
 		iBuffer = bBuffer.asIntBuffer();
 		
