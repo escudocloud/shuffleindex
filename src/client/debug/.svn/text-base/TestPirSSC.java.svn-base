@@ -1,0 +1,72 @@
+package client.debug;
+
+import client.pir.Client;
+
+public class TestPirSSC {
+
+	public static void main(String[] args) {
+
+		int num = 10;
+		
+		Client client = new Client();
+		client.openConnection();
+		
+		client.deleteServerSideCache();
+		
+		for( int c = 1 ; c <= 5 ; c++ ) {
+			
+			client.initServerSideCache(c);
+			
+			for( int s = 1 ; s <= 5 ; s++ ) {
+			
+				System.err.println("cache: " + c + " cover: " + s );
+				
+				for( int i = 1 ; i <= num ; i++) {
+					
+					long key = (long)(client.getSuperBlock().getKeyNum()*Math.random()) + 1 ;
+					
+					if( key != client.pirSSC(key, s) )
+						System.err.println("ERRORE");
+				
+//					if( (i+1) %500 == 0 )
+//						System.err.println(i+1);
+					
+				}
+				
+			}
+				
+		}
+		
+		client.saveServerSideCache();
+		
+//		for( int c = 1 ; c <= 5 ; c++ ) {
+//			
+//			client.initClientSideCache(c);
+//			
+//			for( int s = 1 ; s <= 5 ; s++ ) {
+//			
+//				System.err.println("cache: " + c + " cover: " + s );
+//				
+//				for( int i = 1 ; i <= num ; i++) {
+//					
+//					long key = (long)(client.getSuperBlock().getKeyNum()*Math.random()) + 1 ;
+//					
+//					if( key != client.pirCSC(key, s) )
+//						System.err.println("ERRORE");
+//				
+////					if( (i+1) %500 == 0 )
+////						System.err.println(i+1);
+//					
+//				}
+//				
+//			}
+//				
+//		}
+//		
+//		client.saveClientSideCache();
+		
+		client.closeConnection();
+		
+	}
+
+}

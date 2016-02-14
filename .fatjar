@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Wed Jul 15 10:46:07 CEST 2009
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=DaemonServer.jar
+manifest.mergeall=true
+manifest.mainclass=
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<po|PIR>~client/;<po|PIR>~server/~debug/;<po|PIR>~server/~gui/;<po|PIR>~base/~debug/;<jar|log4j-1.2.15.jar>
+includes=

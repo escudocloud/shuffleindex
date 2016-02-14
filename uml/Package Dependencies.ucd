@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="Package Dependencies" size="776,558" id="" metadata="uml2-1.0" initialized="true" scrolledX="358" scrolledY="149" tag="1000" key="32303037303533312D31303030205069722053696E676C6520436C69656E742F6F4F6F5F6A306B33725F6F4F6F">
+  <children xsi:type="editmodel:PackageEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.1/@sourceConnections.0 //@children.6/@sourceConnections.0 //@children.7/@sourceConnections.0" name="base.bptree" location="248,195" size="110,60" id="base.bptree"/>
+  <children xsi:type="editmodel:PackageEditModel" targetConnections="//@children.7/@sourceConnections.1 //@children.6/@sourceConnections.1" name="base.conversion" location="248,390" size="138,60" id="base.conversion">
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="base.conversion-Standard::Call->base.bptree*base.conversion-Standard::Instantiate->base.bptree*base.conversion-Soyatec::Import->base.bptree" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import, Instantiate»" location="240,307" size="174,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="6.0" distanceFromWire="-25.0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="54,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="54,60"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="base.conversion-Standard::Instantiate->base.disk*base.conversion-Standard::Call->base.disk*base.conversion-Soyatec::Import->base.disk" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" location="566,359" size="0,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="55.88835017622265" distanceFromWire="-80.63803268049087" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="86,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,55"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:PackageEditModel" targetConnections="//@children.3/@sourceConnections.1 //@children.6/@sourceConnections.3" name="base.crypto" location="623,0" size="108,60" id="base.crypto"/>
+  <children xsi:type="editmodel:PackageEditModel" targetConnections="//@children.1/@sourceConnections.1 //@children.6/@sourceConnections.2 //@children.7/@sourceConnections.2" name="base.disk" location="630,195" size="94,60" id="base.disk">
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="base.disk-Standard::Call->base.bptree*base.disk-Soyatec::Import->base.bptree*base.disk-Soyatec::Access->base.bptree*base.disk-Standard::Instantiate->base.bptree" source="//@children.3" target="//@children.0" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Access, Call, Import, Instantiate»" location="355,195" size="234,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="22.0" distanceFromWire="-21.0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,30" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="110,30"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="base.disk-Standard::Call->base.crypto" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="45,18" fontInfo="Arial-12-0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="47,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="54,60"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:PackageEditModel" name="base.log" location="55,195" size="89,60" id="base.log"/>
+  <children xsi:type="editmodel:PackageEditModel" name="base.communication" location="55,390" size="167,60" id="base.communication"/>
+  <children xsi:type="editmodel:PackageEditModel" name="client.pir" location="54,0" size="91,60" id="client.pir">
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="client.pir-Standard::Call->base.bptree*client.pir-Soyatec::Import->base.bptree*client.pir-Standard::Instantiate->base.bptree*client.pir-Soyatec::Access->base.bptree" source="//@children.6" target="//@children.0" targetEnd="//@children.6/@sourceConnections.0/@children.2" label="//@children.6/@sourceConnections.0/@children.0" sourceEnd="//@children.6/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Access, Call, Import, Instantiate»" location="164,151" size="234,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="81.78426545597635" distanceFromWire="30.713741612288032" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="76,60" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="24,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" id="client.pir-Standard::Call->base.conversion" source="//@children.6" target="//@children.1" targetEnd="//@children.6/@sourceConnections.1/@children.2" label="//@children.6/@sourceConnections.1/@children.0" sourceEnd="//@children.6/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" location="166,239" size="45,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="21.626399706170318" distanceFromWire="-8.080769502278628" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="68,60" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="6,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="client.pir-Standard::Call->base.disk*client.pir-Soyatec::Import->base.disk" source="//@children.6" target="//@children.3" targetEnd="//@children.6/@sourceConnections.2/@children.2" label="//@children.6/@sourceConnections.2/@children.0" sourceEnd="//@children.6/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" location="335,82" size="96,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="-14.666001094650733" distanceFromWire="32.16999241360967" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="91,46" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,14"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="client.pir-Standard::Call->base.crypto" source="//@children.6" target="//@children.2" targetEnd="//@children.6/@sourceConnections.3/@children.2" label="//@children.6/@sourceConnections.3/@children.0" sourceEnd="//@children.6/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" size="54,22" fontInfo="Arial-14-0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="91,30" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,30"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:PackageEditModel" name="server.pir" location="630,390" size="95,60" id="server.pir">
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="server.pir-Standard::Call->base.bptree*server.pir-Standard::Instantiate->base.bptree*server.pir-Soyatec::Import->base.bptree" source="//@children.7" target="//@children.0" targetEnd="//@children.7/@sourceConnections.0/@children.2" label="//@children.7/@sourceConnections.0/@children.0" sourceEnd="//@children.7/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import, Instantiate»" location="456,269" size="174,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="-23.862836087620437" distanceFromWire="-62.89328305833113" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,5" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="110,59"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="server.pir-Standard::Call->base.conversion" source="//@children.7" target="//@children.1" targetEnd="//@children.7/@sourceConnections.1/@children.2" label="//@children.7/@sourceConnections.1/@children.0" sourceEnd="//@children.7/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call»" location="488,420" size="45,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="-2.0" distanceFromWire="9.0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,30" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="138,30"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="server.pir-Soyatec::Access->base.disk*server.pir-Soyatec::Import->base.disk*server.pir-Standard::Instantiate->base.disk*server.pir-Standard::Call->base.disk" source="//@children.7" target="//@children.3" targetEnd="//@children.7/@sourceConnections.2/@children.2" label="//@children.7/@sourceConnections.2/@children.0" sourceEnd="//@children.7/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Access, Call, Import, Instantiate»" location="525,315" size="234,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="-2.0" distanceFromWire="35.0" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="47,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="47,60"/>
+    </sourceConnections>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

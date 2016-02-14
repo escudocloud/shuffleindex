@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/src/server/command
+END
+StartServerCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/src/server/command/StartServerCommand.java
+END
+ExecuteServerCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/src/server/command/ExecuteServerCommand.java
+END
+CloseServerCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/src/server/command/CloseServerCommand.java
+END
+StopServerCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/src/server/command/StopServerCommand.java
+END
+Command.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/src/server/command/Command.java
+END

@@ -1,0 +1,15 @@
+package server.command;
+
+
+public class CloseServerCommand implements Command  {
+
+	public CloseServerCommand(){
+	} 
+	
+	public void execute() {
+		
+		System.exit(0);
+        
+	}
+	
+}

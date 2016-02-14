@@ -1,0 +1,333 @@
+package client.pir;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+
+import base.bptree.INode;
+import base.bptree.Node;
+
+/** 
+ * The ServerSideCache class
+ * @author Tommaso
+ *
+ */
+public class ServerSideCache {
+	
+	/** The cache's levels list */
+	private LinkedList<ServerSideCacheLevel> levels;
+	
+	/**
+	 * The class constructor
+	 * 
+	 * @param levelNum the number of cache levels
+	 * @param levelEleNum the number of element in every level
+	 */
+	public ServerSideCache( long levelNum , long levelEleNum ) {
+		
+		levels = new LinkedList<ServerSideCacheLevel>();
+		
+		for ( int i = 0 ; i < levelNum ; i++ ) {
+			levels.add( new ServerSideCacheLevel((int)levelEleNum) );
+		}
+		
+	}
+	
+	/**
+	 * Return the specified level
+	 * 
+	 * @param index the level
+	 * 
+	 * @return the level object
+	 */
+	public ServerSideCacheLevel getLevel( int index ) {
+		
+		return levels.get(index);
+		
+	}
+	
+	/**
+	 * Sets the specified cache level
+	 * 
+	 * @param index the level number
+	 * @param level the new level value to set
+	 */
+	public void setLevel( int index, ServerSideCacheLevel level) {
+		
+		levels.set(index, level);
+	
+	}
+	
+	/**
+	 * Returns the number of levels
+	 * 
+	 * @return the number of levels
+	 */
+	public int getLevelNumber() {
+		
+		return levels.size();
+		
+	}
+	
+	/**
+	 * Print the nodes and their weights stored into the cache
+	 */
+	public void printInfo(){
+		
+		for( int i = 0 ; i < levels.size() ; i++ ) {
+			for( int c = 0 ; c < levels.get(i).getSize() ; c++) {
+				levels.get(i).nodes.get(c).printInfo();
+				System.out.println(levels.get(i).weights.get(c));
+			}
+		}
+		
+	}
+	
+}
+
+/**
+ * The ServerSideCacheLevel class
+ * @author Tommaso
+ *
+ */
+class ServerSideCacheLevel {
+	
+	/** The max number of element in the level */
+	int maxSize;
+	/** The cached nodes list */
+	LinkedList<Node<Long,Long>> nodes;
+	/** The list of weights associated with nodes */
+	LinkedList<Long> weights;
+	
+	/**
+	 * The class constructor
+	 * 
+	 * @param levelEleNum the number of element
+	 */
+	public ServerSideCacheLevel(int levelEleNum) {
+		
+		maxSize = levelEleNum;
+		nodes = new LinkedList<Node<Long,Long>>();
+		weights = new LinkedList<Long>();
+		
+	}
+	
+	/** 
+	 * Update the weight of all the nodes in the level (weight = weight -1)
+	 */
+	public void updateWeights() {
+		
+		for( int i = 0 ; i < weights.size() ; i++) {
+			weights.set(i, weights.get(i) - 1);			
+		}
+		
+	}
+	
+	/**
+	 * Update the weight of the specified node
+	 * 
+	 * @param pid
+	 */
+	public void updateWeight( long pid , long weight) {
+		
+		for( int i = 0 ; i < nodes.size() ; i++ ) {
+			if( nodes.get(i).pid == pid )
+				weights.set(i, weight);
+		}
+		
+	}
+	
+	/**
+	 * Returns the list of the cached nodes' pid
+	 * @return
+	 */
+	public LinkedList<Long> getPids() {
+		
+		LinkedList<Long> pids = new LinkedList<Long>();
+		
+		for( Node<Long,Long> n : nodes )
+			pids.add(n.pid);
+		
+		return pids;
+		
+	}
+	
+	/**
+	 * Returns the number of nodes actually in the level
+	 * 
+	 * @return the current size
+	 */
+	public int getSize() {
+		
+		return nodes.size();
+		
+	}
+	
+	/**
+	 * Adds a new node to the level with the specified weight
+	 * 
+	 * @param node
+	 * @param weight
+	 */
+	public void addNode( Node<Long,Long> node, long weight ) {
+		
+		nodes.add(node);
+		weights.add(weight);
+		
+	}	
+	
+	/**
+	 * Adds a list of new nodes to the level with the specified weight, that is the same for all the nodes
+	 * 
+	 * @param toAdd the list of nodes
+	 * @param weight
+	 */
+	public void addNodes( LinkedList<Node<Long,Long>> toAdd, long weight ) {
+		
+		for( int i = 0 ; i < toAdd.size() ; i++  )
+			addNode(toAdd.get(i), weight);
+		
+	}
+	
+	/** 
+	 * Checks if exist a node in the level with the given pid
+	 * 
+	 * @param pid
+	 * 
+	 * @return true if the node exist otherwise false
+	 */
+	public boolean contains( long pid ) {
+		
+		for( Node<Long,Long> n : nodes ) {
+			if( n.pid == pid )
+				return true;
+		}
+					
+		return false;
+		
+	}
+	
+	/**
+	 * Returns and removes from the level the specified node and his weight
+	 *  
+	 * @param pid
+	 * 
+	 * @return the removed node
+	 */
+	public Node<Long,Long> getAndRemove( long pid ) {
+		
+		Node<Long,Long> node = null;
+		
+		for( int i = 0 ; i < nodes.size() ; i++) {
+			if( nodes.get(i).pid == pid ) {
+				node = nodes.get(i);
+				nodes.remove(i);
+				weights.remove(i);
+			}
+		}
+		
+		return node;
+		
+	}
+	
+	/**
+	 * Returns and removes from the level the oldest node
+	 *  
+	 * @param maxValue maximum weight that a node can have
+	 * 
+	 * @return the removed node
+	 */
+	public Node<Long,Long> getAndRemoveOldestNode( long maxValue ) {
+		
+		Node<Long,Long> node = null;
+		
+		long min = maxValue;
+		int index = 0;
+		
+		for( int i = 0 ; i < weights.size() ; i++) {
+			if( weights.get(i) < min ) {
+				min = weights.get(i);
+				index = i;
+			}
+		}
+		
+		node = nodes.get(index);
+		nodes.remove(index);
+		weights.remove(index);
+		
+		return node;
+		
+	}
+	
+	/**
+	 * Returns from the level the specified node
+	 *  
+	 * @param pid
+	 */
+	public Node<Long,Long> get( long pid ) {
+		
+		for( int i = 0 ; i < nodes.size() ; i++) {
+			if( nodes.get(i).pid == pid ) {
+				return nodes.get(i);
+			}
+		}
+		
+		return null;
+		
+	}
+	
+	/**
+	 * Update all the nodes' pid using the given associative array
+	 * 
+	 * @param associativeArray
+	 */
+	public void updatePids(HashMap<Long, Long> associativeArray) {
+		
+		for( int i = 0 ; i < nodes.size() ; i++) {
+			if( associativeArray.containsKey(nodes.get(i).pid) ) {
+				nodes.get(i).pid = associativeArray.get(nodes.get(i).pid);
+			}
+		}
+		
+	}
+	
+	/**
+     * Updates all the nodes' pointers with the given associative array
+     * 
+     * @param nodeList
+     * @param associativeArray
+     */
+    public void updatePointers(HashMap<Long, Long> associativeArray) {
+
+    	for( int n = 0 ; n < nodes.size() ; n++ ) {
+    		for( int i = 0 ; i < ((INode<Long,Long>)nodes.get(n)).num+1 ; i++ ) {
+        		if(associativeArray.containsKey(((INode<Long,Long>)nodes.get(n)).children[i])) {
+        			((INode<Long,Long>)nodes.get(n)).children[i] = associativeArray.get(((INode<Long,Long>)nodes.get(n)).children[i]);
+        		} 		
+        	}
+    	}
+    	
+    }
+	
+	/**
+	 * Update the cache replacing with the given node the one with the minimum weight 
+	 * 
+	 * @param node to add to the level
+	 */
+	public void replaceOldestNode( Node<Long,Long> node) {
+		
+		long min = maxSize;
+		int index = 0;
+		
+		for( int i = 0 ; i < weights.size() ; i++) {
+			if( weights.get(i) < min ) {
+				min = weights.get(i);
+				index = i;
+			}
+		}
+		
+		nodes.set(index, node);
+		weights.set(index, (long)maxSize);
+		
+	}
+
+}

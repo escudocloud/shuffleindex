@@ -1,0 +1,28 @@
+package client.debug;
+
+import client.pir.Client;
+
+public class TestServerSideCache {
+	
+	public static void main(String[] args) {
+		
+		Client client = new Client();
+		client.openConnection();
+		
+		client.initServerSideCache(2);
+		
+		client.serverSideCache.printInfo();
+		
+//		System.out.println("-------------------------------------------------------");
+//		
+//		for( int i = 0 ; i < client.getSuperBlock().getHeight() ; i ++) {
+//			client.serverSideCache.setLevel(i+1, client.downloadCacheLevel(i));
+//		}
+//		
+//		client.serverSideCache.printInfo();
+//		
+//		client.closeConnection();
+		
+	}
+	
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="Pir Single Client/dist/pir.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/Pir Single Client/dist/pir-jar.jardesc" exportErrors="false" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.debug{TestPirCSC.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.debug.performance{Search.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.debug{TestDisk.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.debug{TestCheckList.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.disk{Disk.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.bptree{Node.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.debug{TestCache.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.command{CloseServerCommand.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.debug.performance{Search.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.bptree{LNode.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.pir{ClientConfigFile.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.command{StopServerCommand.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.main{DaemonServer.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.command{Command.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.test{Test.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.pir{ServerSideCache.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.conversion{Conversion.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.debug{TestPir.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.pir{ClientSideCache.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.disk{Buffer.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.pir{ServerConfigFile.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.disk{DiskSuperBlock.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.test{NodeIdLog.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.crypto{Crypto.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.pir{Database.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.debug{StartServer.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.bptree{Split.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.log{Log.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.debug{TestPirSSC.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.pir{Client.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.debug.performance{CreateBptree.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.debug{TestNodeCounter.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.disk{DiskCacheBlock.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.disk{DiskIO.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.test{Main.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.debug{TestClientSideCache.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.debug{TestNodeIdLog.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.debug{TestPrintBptree.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.test{EsteemedAccessProfile.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.debug{TestCrypto.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.debug{TestGetNodes.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.pir{Cache.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.bptree{INode.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.main{CommandLineServer.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.bptree{Bptree.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.test{NodeCoverageItem.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.debug{TestNodeConversion.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.disk{DiskConfFile.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.test{NodeCoverage.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.debug{TestSuperBlockConversion.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;client.debug{TestServerSideCache.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.bptree{BptreeCustom.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.command{ExecuteServerCommand.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.gui{ServerGUI.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.communication{Protocol.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.command{StartServerCommand.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.debug{TestPidMultiDisk.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.debug{TestDiskCacheBlock.java"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;server.pir{Server.java"/>
+        <file path="/Pir Single Client/src/client/test/disk_conf.xml"/>
+        <javaElement handleIdentifier="=Pir Single Client/src&lt;base.commandline{CreateCustomBptree.java"/>
+    </selectedElements>
+</jardesc>

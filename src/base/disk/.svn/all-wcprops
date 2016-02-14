@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/src/base/disk
+END
+DiskConfFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/src/base/disk/DiskConfFile.java
+END
+DiskIO.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/src/base/disk/DiskIO.java
+END
+DiskSuperBlock.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/src/base/disk/DiskSuperBlock.java
+END
+Buffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/src/base/disk/Buffer.java
+END
+DiskCacheBlock.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/src/base/disk/DiskCacheBlock.java
+END
+Disk.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/src/base/disk/Disk.java
+END

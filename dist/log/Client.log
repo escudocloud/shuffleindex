@@ -1,0 +1,12 @@
+22435 [main] ERROR client.pir.Client  - public long pir( long targetKey, int coverNum)
+java.lang.Exception: Target key: 111 Target: 591836149 Level l: 2
+	at client.pir.Client.pirCSC(Client.java:1464)
+	at client.test.Test.performanceTest(Test.java:137)
+	at client.test.Test.runPerformanceTest(Test.java:100)
+	at client.test.Main.main(Main.java:10)
+22438 [main] ERROR client.pir.Client  - public long pir( long targetKey, int coverNum)
+java.lang.Exception: Cache hit
+	at client.pir.Client.pirCSC(Client.java:1466)
+	at client.test.Test.performanceTest(Test.java:137)
+	at client.test.Test.runPerformanceTest(Test.java:100)
+	at client.test.Main.main(Main.java:10)

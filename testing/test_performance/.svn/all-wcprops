@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/testing/test_performance
+END
+Performance.plt
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/testing/test_performance/Performance.plt
+END
+Performance1.plt
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/testing/test_performance/Performance1.plt
+END
+co_performance_2GiB_MFO_509_HEIGHT_3_SERVER.ps
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/testing/test_performance/co_performance_2GiB_MFO_509_HEIGHT_3_SERVER.ps
+END
+pyscript.py
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/testing/test_performance/pyscript.py
+END
+co_performance_1TiB_MFO_509_HEIGHT_4_LEAFSIZE_8K_SERVER.ps
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/testing/test_performance/co_performance_1TiB_MFO_509_HEIGHT_4_LEAFSIZE_8K_SERVER.ps
+END
+ca_performance_1TiB_MFO_509_HEIGHT_4_LEAFSIZE_8K_SERVER.ps
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/testing/test_performance/ca_performance_1TiB_MFO_509_HEIGHT_4_LEAFSIZE_8K_SERVER.ps
+END
+co_performance_63GiB_MFO_253_HEIGHT_4_LEAFSIZE_4K_SERVER.ps
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/testing/test_performance/co_performance_63GiB_MFO_253_HEIGHT_4_LEAFSIZE_4K_SERVER.ps
+END
+perfscriptbash.sh
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/testing/test_performance/perfscriptbash.sh
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/testing/test_performance/README.txt
+END
+co_performance_20GiB_MFO_192_HEIGHT_4.ps
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/testing/test_performance/co_performance_20GiB_MFO_192_HEIGHT_4.ps
+END
+co_performance_2GiB_MFO_509_HEIGHT_3.ps
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/privateinformationretrieval_tesi/!svn/ver/5/trunk/Pir%20Single%20Client/testing/test_performance/co_performance_2GiB_MFO_509_HEIGHT_3.ps
+END

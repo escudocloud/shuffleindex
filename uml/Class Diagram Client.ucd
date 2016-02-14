@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="Class Diagram Client" size="1012,1153" id="" metadata="uml2-1.0" initialized="true" zoom="0.75" scrolledX="-3" scrolledY="-3" tag="1000" key="32303037303533312D31303030205069722053696E676C6520436C69656E742F6F4F6F5F6A306B33725F6F4F6F">
+  <children xsi:type="editmodel:PackageEditModel" name="client.pir" location="2,1" size="523,298" id="client.pir">
+    <children xsi:type="editmodel:ClassEditModel" name="Client" location="38,36" size="203,75" id="client.pir/Client" runTimeClassModel="getSuperBlock(),pirCSC(JI),pirCSCNodeIdLog(JILclient.test.NodeIdLog;),find(J),deleteServerSideCache(),serverSideCache,pirCSCLeafsPidLogWithEsteemedAccessprofile(JILclient.test.EsteemedAccessProfile;Ljava.util.HashMap;Ljava.util.HashMap;),superBlock,initServerSideCache(I),clientSideCache,pirCSC(J),pirCSCNodeCoverage(JILclient.test.NodeCoverageItem;),saveClientSideCache(),saveServerSideCache(),openConnection(),Client(),closeConnection(),initClientSideCache(I),pirSSC(JI),pirCSCLeafsPidLog(JILjava.util.HashMap;Ljava.util.HashMap;)">
+      <children xsi:type="editmodel:CompartmentEditModel" size="180,36">
+        <children xsi:type="editmodel:AttributeEditModel" name="clientSideCache" id="client.pir/Client#clientSideCache"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="socket" id="client.pir/Client#socket"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" id="client.pir/Client-Soyatec::Import->client.pir/ClientSideCache*client.pir/Client-Standard::Call->client.pir/ClientSideCache*client.pir/Client-Standard::Instantiate->client.pir/ClientSideCache" source="//@children.0/@children.0" target="//@children.0/@children.1" targetEnd="//@children.0/@children.0/@sourceConnections.0/@children.2" label="//@children.0/@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import, Instantiate»" location="57,136" size="174,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="-5.0" distanceFromWire="7.999999999999999" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="97,74" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="118,0"/>
+      </sourceConnections>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Visibility" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.0/@sourceConnections.0" name="ClientSideCache" location="17,188" size="247,93" id="client.pir/ClientSideCache" runTimeClassModel="save(),ClientSideCache(JJ),creationDate,delete(),getCreationDate(),printInfo(),ClientSideCache(JJZ),exist(),getLevel(I),getLevelNumber(),load(JJ)">
+      <children xsi:type="editmodel:CompartmentEditModel" size="224,54">
+        <children xsi:type="editmodel:AttributeEditModel" name="levels" id="client.pir/ClientSideCache#levels"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="creationDate" id="client.pir/ClientSideCache#creationDate"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="cACHE_FILE" id="client.pir/ClientSideCache#cACHE_FILE"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Visibility" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" name="ClientSideCacheLevel" location="280,189" size="226,93" id="client.pir/ClientSideCacheLevel" runTimeClassModel="getSize(),updateWeight(JJ),updateWeights(),updatePointers(Ljava.util.HashMap;),getAndRemove(J),addNode(Lbase.bptree.Node;J),get(J),replaceOldestNode(Lbase.bptree.Node;),weights,nodes,getAndRemoveOldestNode(J),updatePids(Ljava.util.HashMap;),addNodes(Ljava.util.LinkedList;J),ClientSideCacheLevel(I),maxSize,contains(J),getPids()">
+      <children xsi:type="editmodel:CompartmentEditModel" size="203,54">
+        <children xsi:type="editmodel:AttributeEditModel" name="maxSize" id="client.pir/ClientSideCacheLevel#maxSize"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="nodes" id="client.pir/ClientSideCacheLevel#nodes"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="weights" id="client.pir/ClientSideCacheLevel#weights"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

@@ -1,0 +1,22 @@
+package client.test;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Test test = new Test();
+		
+//		test.runPerformanceTest();
+		
+//		test.runNodeIdLogTest();
+		
+//		test.runNodeCoverageTest();
+		
+		test.runCoverAndTargetCompareAnalysisWithRandomCoversTest();
+		
+//		test.runCoverAndTargetCompareAnalysis();
+		
+	}
+
+}

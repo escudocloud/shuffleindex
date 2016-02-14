@@ -1,0 +1,44 @@
+
+Albero inizialmente con 64 Nodi, altezza h=3 (ossia 3 nodi su un percorso root-->leaf) 
+contenente chiavi con valore numerico da 1 a 64 (7 chiavi per nodo)
+
+Parametri per questo piccolo "stress test": 
+num_cover = 1, num_cached = 1 
+la radice deve contenere almeno 3 chiavi 
+lo split di un nodo viene operato se al momento dell'accesso da parte del 
+client il nodo risulta "pieno".
+    
+
+Nelle foglie il record corrispondente ad un valore di chiave 
+(per semplicità di visualizzazione) è anch'esso un intero con 
+valore uguale a quello della chiave
+
+Nei file pdf allegati la stampa dell'albero riporta:
+come contenuto dei nodi intermedi 
+< Phisical Id > : < elenco dei valori della chiave di ricerca >
+
+come contenuto dei nodi foglia 
+< Phisical Id > : < elenco dei valori della chiave di ricerca >
+
+
+il file tree.pdf, mostra la configurazione iniziale dell'albero 
+
+il file tree_1.pdf mostra la configurazione dell'albero dopo lo split della radice 
+
+il file tree_end.pdf mostra la configurazione dell'albero dopo  le seguenti operazioni
+
+insert(Key = 70,  Value = 70);
+insert(Key = 100, Value = 100);
+insert(Key = 140, Value = 140);
+insert(Key = 160, Value = 160);
+insert(Key = 80, Value = 80);
+insert(Key = 90, Value = 90);
+insert(Key = 66, Value = 66);
+insert(Key = 68, Value = 68);
+insert(Key = 65, Value = 65);
+
+Le operazioni di Update effettuano una Ricerca e semplicemente sostituiscono il dato 
+corrispondente alla targetKey nel corrispondente nodo foglia  
+
+Le operazioni di Cancellazione effettuano una Ricerca e semplicemente sostituiscono il dato 
+corrispondente alla targetKey nel corrispondente nodo foglia con un valore "tombStone" 

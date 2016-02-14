@@ -1,0 +1,6 @@
+1    [main] ERROR client.pir.Client  - public long pir( long targetKey, int coverNum)
+java.lang.Exception: Target key: 29 Target: 266414 Level l: 3
+	at client.pir.Client.pirCSC(Client.java:1500)
+	at client.test.Test.setup(Test.java:115)
+	at client.test.Test.runPerformanceTest(Test.java:93)
+	at client.test.Main.main(Main.java:10)

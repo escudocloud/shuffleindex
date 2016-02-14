@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="Class Diagram Base " size="1518,1202" id="" metadata="uml2-1.0" initialized="true" zoom="0.75" scrolledX="557" scrolledY="312" tag="1000" key="32303037303533312D31303030205069722053696E676C6520436C69656E742F6F4F6F5F6A306B33725F6F4F6F">
+  <children xsi:type="editmodel:PackageEditModel" name="base.bptree" location="4,9" size="425,807" id="base.bptree">
+    <children xsi:type="editmodel:ClassEditModel" name="Bptree" location="19,238" size="169,111" id="base.bptree/Bptree" runTimeClassModel="insert(LKey;LValue;),find(LKey;),root,close(),Bptree(Lbase.disk.Disk;),getRoot(),n,printAll(Lbase.bptree.Node;Ljava.lang.String;),m">
+      <children xsi:type="editmodel:CompartmentEditModel" size="131,72">
+        <children xsi:type="editmodel:AttributeEditModel" name="root" id="base.bptree/Bptree#root"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="disk" id="base.bptree/Bptree#disk"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="n" id="base.bptree/Bptree#n"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="m" id="base.bptree/Bptree#m"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="base.bptree/Bptree-Standard::Call->base.bptree/Node*base.bptree/Bptree-Soyatec::Import->base.bptree/Node*base.bptree/Bptree-Soyatec::Access->base.bptree/Node" source="//@children.0/@children.0" target="//@children.0/@children.2" targetEnd="//@children.0/@children.0/@sourceConnections.0/@children.2" label="//@children.0/@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Access, Call, Import»" location="101,209" size="156,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="-27.558926390406096" distanceFromWire="19.937541879784945" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="153,0" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="0,137"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="base.bptree/Bptree-Soyatec::Import->base.bptree/Split*base.bptree/Bptree-Soyatec::Access->base.bptree/Split" source="//@children.0/@children.0" target="//@children.0/@children.4" targetEnd="//@children.0/@children.0/@sourceConnections.1/@children.2" label="//@children.0/@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Access, Import»" location="42,171" size="121,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="15.0" distanceFromWire="-2.000000000000007" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="77,0" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="78,93"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" id="base.bptree/Bptree-Soyatec::Access->base.bptree/LNode*base.bptree/Bptree-Standard::Call->base.bptree/LNode*base.bptree/Bptree-Soyatec::Import->base.bptree/LNode*base.bptree/Bptree-Standard::Instantiate->base.bptree/LNode" source="//@children.0/@children.0" target="//@children.0/@children.3" targetEnd="//@children.0/@children.0/@sourceConnections.2/@children.2" label="//@children.0/@children.0/@sourceConnections.2/@children.0" sourceEnd="//@children.0/@children.0/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Access, Call, Import, Instantiate»" location="2,455" size="234,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="38.99999999999999" distanceFromWire="66.0" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="33,111" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="38,0"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" id="base.bptree/Bptree-Soyatec::Import->base.bptree/INode*base.bptree/Bptree-Standard::Call->base.bptree/INode*base.bptree/Bptree-Soyatec::Access->base.bptree/INode*base.bptree/Bptree-Standard::Instantiate->base.bptree/INode" source="//@children.0/@children.0" target="//@children.0/@children.1" targetEnd="//@children.0/@children.0/@sourceConnections.3/@children.2" label="//@children.0/@children.0/@sourceConnections.3/@children.0" sourceEnd="//@children.0/@children.0/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Access, Call, Import, Instantiate»" location="69,367" size="234,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="-75.54058347020532" distanceFromWire="-2.760479846139609" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="159,111" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="15,0"/>
+      </sourceConnections>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Visibility" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.0/@sourceConnections.3" name="INode" location="244,521" size="164,265" id="base.bptree/INode" runTimeClassModel="getLoc(LKey;),setKey(ILKey;),INode(Lbase.disk.Disk;I[B),printInfo(),insert(LKey;LValue;),getBytes(),INode(Lbase.disk.Disk;),n,INode(I),children,print(),getXml()">
+      <children xsi:type="editmodel:CompartmentEditModel" size="114,36">
+        <children xsi:type="editmodel:AttributeEditModel" name="children" id="base.bptree/INode#children"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="n" id="base.bptree/INode#n"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="73,180">
+        <children xsi:type="editmodel:MethodEditModel" name="INode" id="base.bptree/INode#INode(Lbase.disk.Disk;)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="INode" id="base.bptree/INode#INode(Lbase.disk.Disk;I[B)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="INode" id="base.bptree/INode#INode(I)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="getBytes" id="base.bptree/INode#getBytes()"/>
+        <children xsi:type="editmodel:MethodEditModel" name="getLoc" id="base.bptree/INode#getLoc(LKey;)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="getXml" id="base.bptree/INode#getXml()"/>
+        <children xsi:type="editmodel:MethodEditModel" name="insert" id="base.bptree/INode#insert(LKey;LValue;)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="print" id="base.bptree/INode#print()"/>
+        <children xsi:type="editmodel:MethodEditModel" name="printInfo" id="base.bptree/INode#printInfo()"/>
+        <children xsi:type="editmodel:MethodEditModel" name="setKey" id="base.bptree/INode#setKey(ILKey;)"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" id="base.bptree/INode-Soyatec::Access->base.bptree/Node*base.bptree/INode-Standard::Derive->base.bptree/Node*base.bptree/INode-Standard::Call->base.bptree/Node*base.bptree/INode-Soyatec::Import->base.bptree/Node" source="//@children.0/@children.1" target="//@children.0/@children.2" targetEnd="//@children.0/@children.1/@sourceConnections.0/@children.2" label="//@children.0/@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Access, Call, Derive, Import»" location="329,398" size="210,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="-44.0" distanceFromWire="-63.0" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="123,-1" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="119,146"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="base.bptree/Node&lt;-base.bptree/INode" source="//@children.0/@children.1" target="//@children.0/@children.2" targetEnd="//@children.0/@children.1/@sourceConnections.1/@children.1" sourceEnd="//@children.0/@children.1/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+        <children xsi:type="editmodel:AssociationEndEditModel" location="74,-1" anchorKind="FixedAtEdge" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="70,146" anchorKind="FixedAtEdge"/>
+      </sourceConnections>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.3/@sourceConnections.1 //@children.0/@children.0/@sourceConnections.0 //@children.0/@children.1/@sourceConnections.0 //@children.0/@children.1/@sourceConnections.1 //@children.0/@children.3/@sourceConnections.0" name="Node" location="248,41" size="160,147" id="base.bptree/Node" runTimeClassModel="getLoc(LKey;),setKey(ILKey;),insert(LKey;LValue;),keys,disk,getBytes(),pid,Node(Lbase.disk.Disk;),print(),getXml(),num,Node(),nonce,printInfo(),vid,changeNonce()">
+      <children xsi:type="editmodel:CompartmentEditModel" size="126,108">
+        <children xsi:type="editmodel:AttributeEditModel" name="num" id="base.bptree/Node#num"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="keys" id="base.bptree/Node#keys"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="pid" id="base.bptree/Node#pid"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="vid" id="base.bptree/Node#vid"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="nonce" id="base.bptree/Node#nonce"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="disk" id="base.bptree/Node#disk"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="base.bptree/Node-Soyatec::Import->base.bptree/Split" source="//@children.0/@children.2" target="//@children.0/@children.4" targetEnd="//@children.0/@children.2/@sourceConnections.0/@children.2" label="//@children.0/@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="61,18" fontInfo="Arial-12-0" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="0,46" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="156,46"/>
+      </sourceConnections>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.0/@sourceConnections.2" name="LNode" location="13,485" size="168,93" id="base.bptree/LNode" runTimeClassModel="getValue(LKey;),getLoc(LKey;),setKey(ILKey;),insert(LKey;LValue;),LNode(II),getBytes(),n,setValue(ILValue;),m,print(),getXml(),values,printInfo(),LNode(Lbase.disk.Disk;),LNode(Lbase.disk.Disk;II[B)">
+      <children xsi:type="editmodel:CompartmentEditModel" size="116,54">
+        <children xsi:type="editmodel:AttributeEditModel" name="m" id="base.bptree/LNode#m"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="n" id="base.bptree/LNode#n"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="values" id="base.bptree/LNode#values"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="base.bptree/Node&lt;-base.bptree/LNode" source="//@children.0/@children.3" target="//@children.0/@children.2" targetEnd="//@children.0/@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@children.3/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+        <children xsi:type="editmodel:AssociationEndEditModel" location="168,4" anchorKind="FixedAtEdge" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="70,146" anchorKind="FixedAtEdge"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" id="base.bptree/LNode-Standard::Derive->base.bptree/Node" source="//@children.0/@children.3" target="//@children.0/@children.2" targetEnd="//@children.0/@children.3/@sourceConnections.1/@children.2" label="//@children.0/@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" location="219,262" size="64,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="78.98576893854532" distanceFromWire="-5.852205155898872" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="149,0" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="22,146"/>
+      </sourceConnections>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@children.0/@sourceConnections.1 //@children.0/@children.2/@sourceConnections.0" name="Split" location="18,41" size="156,93" id="base.bptree/Split" runTimeClassModel="Split(LKey;Lbase.bptree.Node;Lbase.bptree.Node;),left,right,key">
+      <children xsi:type="editmodel:CompartmentEditModel" size="133,54">
+        <children xsi:type="editmodel:AttributeEditModel" name="key" id="base.bptree/Split#key"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="left" id="base.bptree/Split#left"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="right" id="base.bptree/Split#right"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+  </children>
+  <children xsi:type="editmodel:PackageEditModel" name="base.conversion" location="836,729" size="137,85" id="base.conversion">
+    <children xsi:type="editmodel:ClassEditModel" name="Conversion" location="8,35" size="113,29" id="base.conversion/Conversion" runTimeClassModel="stringToSuperBlock(Ljava.lang.String;),nodeBytesToString([B),stringToNodeBytes(Ljava.lang.String;),nodeToString(Lbase.bptree.Node;),stringToNode(Ljava.lang.String;II),superBlockToString(Lbase.disk.DiskSuperBlock;)">
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+  </children>
+  <children xsi:type="editmodel:PackageEditModel" name="base.crypto" location="454,650" size="351,168" id="base.crypto">
+    <children xsi:type="editmodel:ClassEditModel" name="Crypto" location="20,36" size="313,111" id="base.crypto/Crypto" runTimeClassModel="loadKey(),decryptBytes([B[B),encryptBytes([B[B),createAndSaveKey()">
+      <children xsi:type="editmodel:CompartmentEditModel" size="290,72">
+        <children xsi:type="editmodel:AttributeEditModel" name="key" id="base.crypto/Crypto#key"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="cRIPTOGRAPHIC_ALGORITHM" id="base.crypto/Crypto#cRIPTOGRAPHIC_ALGORITHM"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="kEYGENERATOR_CRIPTOGRAPHIC_ALGORITHM" id="base.crypto/Crypto#kEYGENERATOR_CRIPTOGRAPHIC_ALGORITHM"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="kEY_FILE_PATH" id="base.crypto/Crypto#kEY_FILE_PATH"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Visibility" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+  </children>
+  <children xsi:type="editmodel:PackageEditModel" name="base.disk" location="827,2" size="614,613" id="base.disk">
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@children.1/@sourceConnections.0" name="Disk" location="212,228" size="181,93" id="base.disk/Disk" runTimeClassModel="getDiskSuperBlock(),writeNode(Lbase.bptree.Node;ZI),readNode(J),writeNode(Lbase.bptree.Node;Z),close(),getDiskCacheBlock(),Disk(Z),readNodeBytes(J)">
+      <children xsi:type="editmodel:CompartmentEditModel" size="158,54">
+        <children xsi:type="editmodel:AttributeEditModel" name="cacheBlock" id="base.disk/Disk#cacheBlock"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="buffer" id="base.disk/Disk#buffer"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="superBlock" id="base.disk/Disk#superBlock"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="base.disk/DiskIO&lt;-base.disk/Disk" source="//@children.3/@children.0" target="//@children.3/@children.4" targetEnd="//@children.3/@children.0/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@children.0/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:AssociationEndEditModel" location="101,93" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="52,0"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="base.disk/Disk-Standard::Derive->base.disk/DiskIO" source="//@children.3/@children.0" target="//@children.3/@children.4" targetEnd="//@children.3/@children.0/@sourceConnections.1/@children.2" label="//@children.3/@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" location="1145,346" size="64,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="-42.0" distanceFromWire="17.0" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="121,93" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="72,0"/>
+      </sourceConnections>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Visibility" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" name="Buffer" location="200,35" size="196,129" id="base.disk/Buffer" runTimeClassModel="get(J),Buffer(Lbase.disk.Disk;I),isInBuffer(J),put(Lbase.bptree.Node;),emptyBuffer()">
+      <children xsi:type="editmodel:CompartmentEditModel" size="173,90">
+        <children xsi:type="editmodel:AttributeEditModel" name="disk" id="base.disk/Buffer#disk"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="nodes" id="base.disk/Buffer#nodes"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="weights" id="base.disk/Buffer#weights"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="nodeNumber" id="base.disk/Buffer#nodeNumber"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="num" id="base.disk/Buffer#num"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" id="base.disk/Buffer-Soyatec::Import->base.disk/Disk*base.disk/Buffer-Standard::Call->base.disk/Disk" source="//@children.3/@children.1" target="//@children.3/@children.0" targetEnd="//@children.3/@children.1/@sourceConnections.0/@children.2" label="//@children.3/@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" location="1111,202" size="96,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="-24.646604352584237" distanceFromWire="27.28634995537468" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="167,129" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="19,0"/>
+      </sourceConnections>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" name="DiskCacheBlock" location="374,35" size="198,211" id="base.disk/DiskCacheBlock" runTimeClassModel="save(),DiskCacheBlock([Ljava.lang.String;Lbase.disk.DiskSuperBlock;),init(),load(),cacheWeights,getBytes(),save([B),cachePids,reset()">
+      <children xsi:type="editmodel:CompartmentEditModel" size="175,36">
+        <children xsi:type="editmodel:AttributeEditModel" name="cachePids" id="base.disk/DiskCacheBlock#cachePids"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="cacheWeights" id="base.disk/DiskCacheBlock#cacheWeights"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="107,126">
+        <children xsi:type="editmodel:MethodEditModel" name="DiskCacheBlock" id="base.disk/DiskCacheBlock#DiskCacheBlock([Ljava.lang.String;Lbase.disk.DiskSuperBlock;)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="getBytes" id="base.disk/DiskCacheBlock#getBytes()"/>
+        <children xsi:type="editmodel:MethodEditModel" name="init" id="base.disk/DiskCacheBlock#init()"/>
+        <children xsi:type="editmodel:MethodEditModel" name="load" id="base.disk/DiskCacheBlock#load()"/>
+        <children xsi:type="editmodel:MethodEditModel" name="reset" id="base.disk/DiskCacheBlock#reset()"/>
+        <children xsi:type="editmodel:MethodEditModel" name="save" id="base.disk/DiskCacheBlock#save()"/>
+        <children xsi:type="editmodel:MethodEditModel" name="save" id="base.disk/DiskCacheBlock#save([B)"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel"/>
+      <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="base.disk/DiskIO&lt;-base.disk/DiskCacheBlock" source="//@children.3/@children.2" target="//@children.3/@children.4" targetEnd="//@children.3/@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:AssociationEndEditModel" location="56,211" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="77,0"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="base.disk/DiskCacheBlock-Standard::Derive->base.disk/DiskIO" source="//@children.3/@children.2" target="//@children.3/@children.4" targetEnd="//@children.3/@children.2/@sourceConnections.1/@children.2" label="//@children.3/@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" location="1237,345" size="64,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="-16.46591070620193" distanceFromWire="20.733397806808814" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="76,211" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="97,0"/>
+      </sourceConnections>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" name="DiskSuperBlock" location="13,34" size="183,345" id="base.disk/DiskSuperBlock" runTimeClassModel="setRootPid(J),getInfo(),getNumLvlEle(),getInnerNodeNum(),getRootPid(),getCSize(),DiskSuperBlock([B),getSbSize(),numLvlEle,keyDomainEnd,getM(),keyDomainStart,load([B),getSbOffset(),addInnerNode(),getCOffset(),getLeafNodeNum(),disksCreationDate,getHeight(),height,getNewNodeOffsets(I),cOffset,DiskSuperBlock([Ljava.lang.String;Ljava.lang.String;),setNumLvlEle(J),newNodeOffsets,DiskSuperBlock([Ljava.lang.String;JI),setNewNodeOffset(IJ),getDisksCreationDate(),rootPid,getBytes(),n,innerNodeNum,m,save(),getN(),cSize,getKeyNum(),getKeyDomainEnd(),leafNodeNum,addLeafNode(),getNOffsets(),nOffsets,sbSize,getKeyDomainStart(),keyNum,sbOffset">
+      <children xsi:type="editmodel:CompartmentEditModel" size="160,306">
+        <children xsi:type="editmodel:AttributeEditModel" name="disksCreationDate" id="base.disk/DiskSuperBlock#disksCreationDate"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="sbOffset" id="base.disk/DiskSuperBlock#sbOffset"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="sbSize" id="base.disk/DiskSuperBlock#sbSize"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="cOffset" id="base.disk/DiskSuperBlock#cOffset"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="cSize" id="base.disk/DiskSuperBlock#cSize"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="numLvlEle" id="base.disk/DiskSuperBlock#numLvlEle"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="nOffsets" id="base.disk/DiskSuperBlock#nOffsets"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="newNodeOffsets" id="base.disk/DiskSuperBlock#newNodeOffsets"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="leafNodeNum" id="base.disk/DiskSuperBlock#leafNodeNum"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="innerNodeNum" id="base.disk/DiskSuperBlock#innerNodeNum"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="height" id="base.disk/DiskSuperBlock#height"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="keyDomainStart" id="base.disk/DiskSuperBlock#keyDomainStart"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="keyDomainEnd" id="base.disk/DiskSuperBlock#keyDomainEnd"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="rootPid" id="base.disk/DiskSuperBlock#rootPid"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="keyNum" id="base.disk/DiskSuperBlock#keyNum"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="m" id="base.disk/DiskSuperBlock#m"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="n" id="base.disk/DiskSuperBlock#n"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="base.disk/DiskIO&lt;-base.disk/DiskSuperBlock" source="//@children.3/@children.3" target="//@children.3/@children.4" targetEnd="//@children.3/@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:AssociationEndEditModel" location="183,302" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="0,12"/>
+      </sourceConnections>
+      <sourceConnections xsi:type="editmodel:DependencyEditModel" id="base.disk/DiskSuperBlock-Standard::Derive->base.disk/DiskIO" source="//@children.3/@children.3" target="//@children.3/@children.4" targetEnd="//@children.3/@children.3/@sourceConnections.1/@children.2" label="//@children.3/@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+        <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" location="1047,374" size="64,18" fontInfo="Arial-12-0" automaticRelocationAllowed="false" locationOnWireFromSource="7.957618285918086" distanceFromWire="15.055773351629007" anchorKind="MiddlePart"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="183,257" attachSource="true"/>
+        <children xsi:type="editmodel:AssociationEndEditModel" location="16,0"/>
+      </sourceConnections>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+    <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@children.3/@sourceConnections.0 //@children.3/@children.0/@sourceConnections.0 //@children.3/@children.2/@sourceConnections.0 //@children.3/@children.0/@sourceConnections.1 //@children.3/@children.2/@sourceConnections.1 //@children.3/@children.3/@sourceConnections.1" name="DiskIO" location="261,471" size="106,121" id="base.disk/DiskIO" runTimeClassModel="writeBytes([BJI),readBytes(JII),closeDisks(),DiskIO([Ljava.lang.String;)">
+      <children xsi:type="editmodel:CompartmentEditModel"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="83,72">
+        <children xsi:type="editmodel:MethodEditModel" name="DiskIO" id="base.disk/DiskIO#DiskIO([Ljava.lang.String;)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="closeDisks" id="base.disk/DiskIO#closeDisks()"/>
+        <children xsi:type="editmodel:MethodEditModel" name="readBytes" id="base.disk/DiskIO#readBytes(JII)"/>
+        <children xsi:type="editmodel:MethodEditModel" name="writeBytes" id="base.disk/DiskIO#writeBytes([BJI)"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel"/>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+  </children>
+  <children xsi:type="editmodel:PackageEditModel" name="base.log" location="450,434" size="265,175" id="base.log">
+    <children xsi:type="editmodel:ClassEditModel" name="Log" location="10,25" size="239,129" id="base.log/Log" runTimeClassModel="nODE_ID_LOG_LEVEL,cLIENT_LOG_FILE_PATH,cLIENT_LOG_LEVEL,pERFORMANCE_LOG_FILE_PATH,pERFORMANCE_LOG_LEVEL">
+      <children xsi:type="editmodel:CompartmentEditModel" size="216,90">
+        <children xsi:type="editmodel:AttributeEditModel" name="cLIENT_LOG_FILE_PATH" id="base.log/Log#cLIENT_LOG_FILE_PATH"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="cLIENT_LOG_LEVEL" id="base.log/Log#cLIENT_LOG_LEVEL"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="nODE_ID_LOG_LEVEL" id="base.log/Log#nODE_ID_LOG_LEVEL"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="pERFORMANCE_LOG_FILE_PATH" id="base.log/Log#pERFORMANCE_LOG_FILE_PATH"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="pERFORMANCE_LOG_LEVEL" id="base.log/Log#pERFORMANCE_LOG_LEVEL"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel"/>
+      <children xsi:type="editmodel:CompartmentEditModel"/>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+  </children>
+  <children xsi:type="editmodel:PackageEditModel" name="base.communication" location="450,15" size="360,363" id="base.communication">
+    <children xsi:type="editmodel:ClassEditModel" name="Protocol" location="10,32" size="334,309" id="base.communication/Protocol" runTimeClassModel="dELETE_CACHE_CODE,sTORE_CACHE_NODES_CODE,cODE_LENGTH,gET_NODES_CODE,sTORE_NODES_CODE,gET_CACHE_NODES_CODE,cONFIRM_NODES_STORE,cHANGE_CLIENT_SIDE_CACHE_ELEMENT_NUMBER,cONFIRM_CACHE_DELETE,gET_SUPERBLOCK_CODE,gET_CACHE_STATUS,sAVE_CACHE_CODE,cONFIRM_CHANGE_CACHE_ELEMENT_NUMBER,cHANGE_SERVER_SIDE_CACHE_ELEMENT_NUMBER,cONFIRM_CACHE_SAVE">
+      <children xsi:type="editmodel:CompartmentEditModel" size="311,270">
+        <children xsi:type="editmodel:AttributeEditModel" name="cHANGE_CLIENT_SIDE_CACHE_ELEMENT_NUMBER" id="base.communication/Protocol#cHANGE_CLIENT_SIDE_CACHE_ELEMENT_NUMBER"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="cHANGE_SERVER_SIDE_CACHE_ELEMENT_NUMBER" id="base.communication/Protocol#cHANGE_SERVER_SIDE_CACHE_ELEMENT_NUMBER"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="cODE_LENGTH" id="base.communication/Protocol#cODE_LENGTH"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="cONFIRM_CACHE_DELETE" id="base.communication/Protocol#cONFIRM_CACHE_DELETE"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="cONFIRM_CACHE_SAVE" id="base.communication/Protocol#cONFIRM_CACHE_SAVE"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="cONFIRM_CHANGE_CACHE_ELEMENT_NUMBER" id="base.communication/Protocol#cONFIRM_CHANGE_CACHE_ELEMENT_NUMBER"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="cONFIRM_NODES_STORE" id="base.communication/Protocol#cONFIRM_NODES_STORE"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="dELETE_CACHE_CODE" id="base.communication/Protocol#dELETE_CACHE_CODE"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="gET_CACHE_NODES_CODE" id="base.communication/Protocol#gET_CACHE_NODES_CODE"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="gET_CACHE_STATUS" id="base.communication/Protocol#gET_CACHE_STATUS"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="gET_NODES_CODE" id="base.communication/Protocol#gET_NODES_CODE"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="gET_SUPERBLOCK_CODE" id="base.communication/Protocol#gET_SUPERBLOCK_CODE"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="sAVE_CACHE_CODE" id="base.communication/Protocol#sAVE_CACHE_CODE"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="sTORE_CACHE_NODES_CODE" id="base.communication/Protocol#sTORE_CACHE_NODES_CODE"/>
+        <children xsi:type="editmodel:AttributeEditModel" name="sTORE_NODES_CODE" id="base.communication/Protocol#sTORE_NODES_CODE"/>
+      </children>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+      <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+    </children>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

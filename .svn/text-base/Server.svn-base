@@ -1,0 +1,39 @@
+#!/bin/bash
+
+function startServer {
+	if [ "$1" = 'true' ]; then
+		sudo jsvc -home /usr/lib/jvm/java-6-sun-1.6.0.13 -debug -cp commons-daemon.jar:DaemonServer.jar server.main.DaemonServer
+	else
+		sudo jsvc -home /usr/lib/jvm/java-6-sun-1.6.0.13 -cp commons-daemon.jar:DaemonServer.jar server.main.DaemonServer
+	fi
+}
+
+function stopServer {
+	if [ "$1" = 'true' ]; then
+		sudo jsvc -home /usr/lib/jvm/java-6-sun-1.6.0.13 -debug -stop commons-daemon.jar:DaemonServer.jar server.main.DaemonServer
+	else
+		sudo jsvc -home /usr/lib/jvm/java-6-sun-1.6.0.13 -stop commons-daemon.jar:DaemonServer.jar server.main.DaemonServer
+	fi
+}
+
+
+if [ "$1" = '-start' ]; then
+	startServer false
+fi
+
+if [ "$1" = '-dstart' ]; then
+	startServer true
+fi
+
+if [ "$1" = '-stop' ]; then
+	stopServer false
+fi
+
+if [ "$1" = '-dstop' ]; then
+	stopServer true
+fi
+
+#HELPMESSAGE = 'Command list:'
+#if [ "$1" = '-help' ]; then
+#	echo $HELPMESSAGE
+#fi
