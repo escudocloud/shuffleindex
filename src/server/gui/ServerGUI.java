@@ -213,7 +213,7 @@ public class ServerGUI extends java.awt.Frame {
 	    			updateLogWindow("Database created in " + time + "[ms]\n"); 
 	    			
 	    			server.disk.close();
-	    			server.disk = new Disk<Long, Long>(false);
+	    			server.disk = new Disk<Long, String>(false);
 	    			
 					return true;
 	            }

@@ -1,8 +1,16 @@
 package base.disk;
 
+import java.io.BufferedOutputStream;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 import java.io.RandomAccessFile;
+
+import base.bptree.Node;
 
 /**
  * The abstract class DiskIO
@@ -80,6 +88,26 @@ public abstract class DiskIO {
     		e.printStackTrace();
     		
     	}
+    	
+    }
+    
+    
+    /**
+     * Write a node to the file
+     * */
+    
+    public void writeBytes(Node node, int i){
+    	try {
+			OutputStream file = new FileOutputStream(files[i]);
+			OutputStream buffer = new BufferedOutputStream(file);
+			ObjectOutput output = new ObjectOutputStream(buffer);
+//			output.
+//			
+			output.writeObject(node);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
     	
     }
     

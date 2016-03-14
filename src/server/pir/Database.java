@@ -2,11 +2,12 @@ package server.pir;
  
 import base.bptree.Bptree;
 import base.disk.Disk;
- 
+
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
- 
+import java.nio.charset.Charset;
 import java.util.List;
 import java.util.ArrayList;
 import org.apache.commons.csv.*;
@@ -26,19 +27,22 @@ public class Database {
  
         Disk<Long, String> disk = new Disk<Long, String>(true); 
         Bptree<Long, String> bptree = new Bptree<Long, String>(disk);
- 
-        CSVFormat format = CSVFormat.DEFAULT.withHeader().withDelimiter(';');
-        CSVParser parser = new CSVParser(new FileReader("wifi.csv"), format);
+
+        File csv = new File("wifi.csv");
+        CSVParser parser = CSVParser.parse(csv, Charset.forName("UTF-16"),CSVFormat.DEFAULT.withHeader().withDelimiter(';'));
+        
+        //CSVFormat format = CSVFormat.DEFAULT.withHeader().withDelimiter(';');
+        //CSVParser parser = new CSVParser(new FileReader("wifi.csv"), format);
         List<String> wifi = new ArrayList<String>();
  
         for (CSVRecord record : parser){
-            wifi.add(record.get(1));
+        	wifi.add(record.get(1));
         }
         System.out.println("CSV importato correttamente");
         for(long i = 0; i < disk.getDiskSuperBlock().getKeyNum() && i < wifi.size() ; i++)
         {
-            System.out.println((i+1) + " " + wifi.get((int) i ));
-            bptree.insert(i+1, wifi.get((int) i));
+            //System.out.println((i+1) + " " + wifi.get((int) i ));
+            bptree.insert(i+1, String.format("%-62s", wifi.get((int) i)));
             }
          
          

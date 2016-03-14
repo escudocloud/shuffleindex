@@ -1,6 +1,7 @@
 package base.disk;
 
 import java.io.File;
+import java.io.Serializable;
 
 import base.bptree.INode;
 import base.bptree.LNode;
@@ -14,7 +15,7 @@ import base.crypto.Crypto;
  * @param <Key> the bptree key type
  * @param <Value> the bptree value type
  */
-public class Disk<Key extends Comparable<? super Key>, Value> extends DiskIO{
+public class Disk<Key extends Comparable<? super Key>, Value> extends DiskIO implements Serializable{
 
 	/** Buffer */
 	private Buffer<Key, Value> buffer;
@@ -141,6 +142,7 @@ public class Disk<Key extends Comparable<? super Key>, Value> extends DiskIO{
 	    		nodebytes = toStore;
 	    	}
 	    	
+	    	//writeBytes(node, i);
 	    	writeBytes(nodebytes, offset, i);
 	    	
 	    	if(create)
@@ -157,6 +159,8 @@ public class Disk<Key extends Comparable<? super Key>, Value> extends DiskIO{
      * 
      * @return the node's bytes
      */
+    //TODO
+    //COME WTF FACCIO
     public byte[] readNodeBytes(long pid) {
     	
     	int length;

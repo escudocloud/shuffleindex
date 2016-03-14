@@ -1,5 +1,6 @@
 package base.bptree;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -7,8 +8,12 @@ import base.disk.Disk;
 import base.disk.DiskSuperBlock;
 
 
-abstract public class Node<Key extends Comparable<? super Key>, Value> {
+abstract public class Node<Key extends Comparable<? super Key>, Value> implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	/** Numbers of key. */
 	public int num;
 	/** Keys vector */

@@ -35,7 +35,7 @@ public class Server implements Runnable{
     private static Cache cache = null; 
     
     /** The disk instance */
-	public Disk<Long, Long> disk = null;
+	public Disk<Long, String> disk = null;
     
 	/** Client socket */
 	private Socket clientSocket = null;	
@@ -52,8 +52,10 @@ public class Server implements Runnable{
 	 */
 	public Server(ServerGUI serverGui){				
 		super();
+		//TODO
+		//CHECK - Long Long?
 		if(disk == null){ // Server is launched for the first time and the disk must be instanced
-			disk = new Disk<Long, Long>(false); 
+			disk = new Disk<Long, String>(false); 
 			if(cache == null)
 			cache = new Cache(disk);
 		}		

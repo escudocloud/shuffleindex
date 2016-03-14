@@ -12,7 +12,7 @@ import base.disk.Disk;
 public class Cache {
 
 	/** The disk instance */
-	private Disk<Long, Long> disk;
+	private Disk<Long, String> disk;
 	/** The cache's levels list */
 	private LinkedList<Level> levels;
 	
@@ -23,12 +23,13 @@ public class Cache {
 	 * @param diskSuperBlock
 	 * @param diskCacheBlock
 	 */
-	public Cache(Disk<Long, Long> disk){
+	public Cache(Disk<Long, String> disk){
 		
 		this.disk = disk;
 		
 		levels = new LinkedList<Level>(); 
-		
+		//TODO
+		//PROBLEM WITH SERIALIZABLE
 		Level level = new Level(1);
 		level.addNode(	disk.getDiskCacheBlock().cachePids.get(0), 
 						disk.readNodeBytes(disk.getDiskCacheBlock().cachePids.get(0)), 
