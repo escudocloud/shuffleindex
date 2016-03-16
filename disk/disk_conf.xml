@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<filesystem encrypted="true">
+<filesystem encrypted="false">
 
 	<disk1 path="disk/disk1" >
 		<superblock offset="0" size="172"/>

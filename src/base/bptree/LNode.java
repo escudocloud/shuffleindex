@@ -57,8 +57,14 @@ public class LNode<Key extends Comparable<? super Key>, Value> extends Node<Key,
 		for (int i = 0; i < M; i++)
 			keys[i] = (Key) Long.valueOf(0);
 		values = (Value[]) new Object[M];
-		for (int i = 0; i < M; i++)
-			values[i] = (Value) String.format("%-62s", " ");
+		try {
+			byte[] b = null;
+			b = String.format("%-100s", " ").getBytes("UTF-16");
+			for (int i = 0; i < M; i++)
+				values[i] = (Value) new String(b);
+		}catch(Exception e){
+			System.out.println("Costruttore LNode vuoto");
+		}
 	}
 
 	/**
@@ -80,8 +86,14 @@ public class LNode<Key extends Comparable<? super Key>, Value> extends Node<Key,
 		for (int i = 0; i < M; i++)
 			keys[i] = (Key) Long.valueOf(0);
 		values = (Value[]) new Object[M];
-		for (int i = 0; i < M; i++)
-			values[i] = (Value) String.format("%-62s", " ");
+		try {
+			byte[] b = null;
+			b = String.format("%-100s", " ").getBytes("UTF-16");
+			for (int i = 0; i < M; i++)
+				values[i] = (Value) new String(b);
+		}catch(Exception e){
+			System.out.println("Costruttore LNode vuoto");
+		}
 	}
 
 	public LNode(LNode<Key, Value> a) {
@@ -114,16 +126,23 @@ public class LNode<Key extends Comparable<? super Key>, Value> extends Node<Key,
 		bBuffer = ByteBuffer.wrap(nodeBytes, 0, 4);
 		IntBuffer iBuffer = bBuffer.asIntBuffer();
 		num = iBuffer.get();
-		bBuffer = ByteBuffer.wrap(nodeBytes, 4, (2 * M + 3) * 8);
+		bBuffer = ByteBuffer.wrap(nodeBytes, 4, (M + 3) * 8);
 		LongBuffer lBuffer = bBuffer.asLongBuffer();
 		nonce = lBuffer.get();
 		pid = lBuffer.get();
 		vid = lBuffer.get();
 		for (int i = 0; i < M; i++)
 			keys[i] = (Key) new Long(lBuffer.get());
+		byte[] dst = new byte[203];
+		//System.out.println(nodeBytes.length);
+		bBuffer = ByteBuffer.wrap(nodeBytes, 4 + (M + 3) * 8,M*203);
 		for (int i = 0; i < M; i++) {
-			values[i] = (Value) String.format("%-62s", "");
+			bBuffer.get(dst);
+			//System.out.println(new String(dst));
+			values[i] = (Value) new String(dst);
+			//values[i] = (Value) new String("cantami o diva del pelide di previtali");
 		}
+
 	}
 
 	/**
@@ -329,11 +348,14 @@ public class LNode<Key extends Comparable<? super Key>, Value> extends Node<Key,
 		int valBytes = 0; // aggiungo la lunghezza di tutte le stringhe
 
 		for (int j = 0; j < num; j++) {
-			// System.out.println(values[j].toString());
+			//System.out.println(values[j]);
+			valBytes += 8;
 			valBytes += values[j].toString().getBytes().length;
 		}
-		 System.out.println(valBytes);
 
+		System.out.println(valBytes + " " + this.pid +"    "+ num);
+		valBytes = 202 * M;
+		//System.out.println(valBytes);
 		nodeBytes = new byte[1 + (M + 3) * 8 + 4 + valBytes];
 		ByteBuffer bBuffer;
 		LongBuffer lBuffer;
@@ -348,7 +370,7 @@ public class LNode<Key extends Comparable<? super Key>, Value> extends Node<Key,
 		bBuffer = ByteBuffer.wrap(nodeBytes, 1 + 4 + (3 * 8), M * 8);
 		lBuffer = bBuffer.asLongBuffer();
 		for (int i = 0; i < num; i++) {
-			// System.out.println(keys[i]);
+			//System.out.println(keys[i]);
 			lBuffer.put(Long.parseLong(keys[i].toString()));
 		}
 		
@@ -356,19 +378,19 @@ public class LNode<Key extends Comparable<? super Key>, Value> extends Node<Key,
 		
 		bBuffer = ByteBuffer.wrap(nodeBytes, 1 + 4 + ((3 + M) * 8), valBytes);
 
-		byte[] dst = new byte[62];
-		
+		//sbyte[] dst = new byte[62];
+		//ByteBuffer appoggio;
 		for (int i = 0; i < num; i++) {
 			
 			//TODO Ne siamo sicuri?
-			assert values[i].toString().getBytes().length==62;
+			//assert values[i].toString().getBytes().length==62;
 			
 			//Encode UTF-16
-			ByteBuffer appoggio = Charset.forName("UTF-16").encode(values[i].toString());
+			//appoggio = Charset.forName("UTF-16").encode(values[i].toString());
 	        //appoggio.get(dst,0, appoggio.limit());
-	        bBuffer.put(dst);
-			//System.out.println(new String(dst));
-
+	        //bBuffer.put(appoggio);
+			//System.out.println(values[i]);
+			bBuffer.put(values[i].toString().getBytes());
 			
 		}
 

@@ -243,7 +243,7 @@ public class Disk<Key extends Comparable<? super Key>, Value> extends DiskIO imp
 	    			    		
 	    	} else {
 	    		
-	    		length = (2*superBlock.getM()+3)*8+4;
+	    		length = (superBlock.getM()+3)*8+4+superBlock.getM()*203;
 	    		
 	    		if(DiskConfFile.getInstance(CONF_FILE).isEncrypted()){
 	    			length = length + 16 - (length % 16);
