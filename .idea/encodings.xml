@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/base/bptree/Bptree.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/bptree/BptreeCustom.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/bptree/INode.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/bptree/LNode.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/bptree/Node.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/bptree/Split.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/commandline/CreateCustomBptree.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/communication/Protocol.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/conversion/Conversion.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/crypto/Crypto.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/debug/TestCrypto.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/debug/TestDiskCacheBlock.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/debug/TestPidMultiDisk.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/disk/Buffer.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/disk/Disk.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/disk/DiskCacheBlock.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/disk/DiskConfFile.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/disk/DiskIO.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/disk/DiskSuperBlock.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/base/log/Log.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/debug/TestCheckList.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/debug/TestClientSideCache.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/debug/TestGetNodes.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/debug/TestNodeCounter.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/debug/TestNodeIdLog.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/debug/TestPir.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/debug/TestPirCSC.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/debug/performance/Search.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/pir/Client.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/pir/ClientConfigFile.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/pir/ClientSideCache.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/pir/TreeViewClient.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/test/EsteemedAccessProfile.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/test/Main.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/test/NodeCoverage.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/test/NodeCoverageItem.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/test/NodeIdLog.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/test/Test.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/command/CloseServerCommand.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/command/Command.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/command/ExecuteServerCommand.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/command/StartServerCommand.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/command/StopServerCommand.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/debug/StartServer.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/debug/TestCache.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/debug/TestDisk.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/debug/TestNodeConversion.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/debug/TestPrintBptree.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/debug/TestSuperBlockConversion.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/debug/performance/CreateBptree.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/debug/performance/Search.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/gui/ServerGUI.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/main/CommandLineServer.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/main/DaemonServer.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/pir/Cache.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/pir/Database.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/pir/Server.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/pir/ServerConfigFile.java" charset="UTF-16" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

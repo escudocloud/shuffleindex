@@ -15,7 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="module-library">
       <library name="log4j-1.2.15.jar">
         <CLASSES>
@@ -35,9 +35,9 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="commons-csv-1.2.jar">
+      <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/commons-csv-1.2/commons-csv-1.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/commons-csv-1.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
