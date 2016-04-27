@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6a19eeb5-0b4d-4e97-9510-9f152c16e131" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out.txt" afterPath="$PROJECT_DIR$/out.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/base/bptree/LNode.java" afterPath="$PROJECT_DIR$/src/base/bptree/LNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/base/bptree/INode.java" afterPath="$PROJECT_DIR$/src/base/bptree/INode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/base/bptree/Node.java" afterPath="$PROJECT_DIR$/src/base/bptree/Node.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/base/commandline/CreateCustomBptree.java" afterPath="$PROJECT_DIR$/src/base/commandline/CreateCustomBptree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/pir/Client.java" afterPath="$PROJECT_DIR$/src/client/pir/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/pir/ClientSideCache.java" afterPath="$PROJECT_DIR$/src/client/pir/ClientSideCache.java" />
     </list>
     <ignored path="Pir_Single_Client_30_July_2012_sera.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,41 +26,63 @@
     <favorites_list name="Pir_Single_Client_30_July_2012_sera" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/client/pir/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5429043">
-              <caret line="1503" column="27" selection-start-line="1503" selection-start-column="27" selection-end-line="1503" selection-end-column="27" />
+            <state vertical-scroll-proportion="-10.894389">
+              <caret line="1649" column="72" selection-start-line="1649" selection-start-column="72" selection-end-line="1649" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#13400#13414#0" expanded="true" />
-                <element signature="e#14006#14012#0" expanded="true" />
-                <element signature="e#14907#14913#0" expanded="true" />
-                <element signature="e#16261#16275#0" expanded="true" />
-                <element signature="e#17018#17030#0" expanded="true" />
-                <element signature="e#22133#22147#0" expanded="true" />
-                <element signature="e#22206#22220#0" expanded="true" />
-                <element signature="e#22367#22373#0" expanded="true" />
-                <element signature="e#22458#22472#0" expanded="true" />
-                <element signature="e#33885#33891#0" expanded="true" />
-                <element signature="e#33951#33960#0" expanded="true" />
-                <element signature="e#37208#37214#0" expanded="true" />
-                <element signature="e#37388#37394#0" expanded="true" />
-                <element signature="e#37454#37460#0" expanded="true" />
-                <element signature="e#37515#37529#0" expanded="true" />
-                <element signature="e#37604#37618#0" expanded="true" />
-                <element signature="e#37739#37753#0" expanded="true" />
-                <element signature="e#37916#37930#0" expanded="true" />
-                <element signature="e#42395#42409#0" expanded="true" />
-                <element signature="e#46044#46058#0" expanded="true" />
-                <element signature="e#46962#46977#0" expanded="true" />
                 <element signature="e#48434#48449#0" expanded="true" />
-                <element signature="e#52064#52078#0" expanded="true" />
-                <element signature="e#52976#52991#0" expanded="true" />
-                <element signature="e#53056#53087#0" expanded="true" />
-                <element signature="e#53185#53191#0" expanded="true" />
+                <element signature="e#53179#53185#0" expanded="true" />
+                <element signature="e#53709#53734#0" expanded="true" />
+                <element signature="e#55361#55375#0" expanded="true" />
+                <element signature="e#55437#55451#0" expanded="true" />
+                <element signature="e#55517#55531#0" expanded="true" />
+                <element signature="e#56940#56954#0" expanded="true" />
+                <element signature="e#59080#59094#0" expanded="true" />
+                <element signature="e#60467#60481#0" expanded="true" />
+                <element signature="e#60543#60557#0" expanded="true" />
+                <element signature="e#60623#60637#0" expanded="true" />
+                <element signature="e#61086#61092#0" expanded="true" />
+                <element signature="e#62046#62060#0" expanded="true" />
+                <element signature="e#65638#65652#0" expanded="true" />
+                <element signature="e#65714#65728#0" expanded="true" />
+                <element signature="e#65795#65809#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TreeViewClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/client/pir/TreeViewClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="INode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/base/bptree/INode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
+              <folding>
+                <element signature="e#679#709#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/base/bptree/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.37037">
+              <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,9 +92,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="481" column="24" selection-start-line="481" selection-start-column="24" selection-end-line="481" selection-end-column="24" />
-              <folding>
-                <element signature="e#8073#8079#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,7 +123,6 @@
         <option value="$PROJECT_DIR$/wifi.csv" />
         <option value="$PROJECT_DIR$/src/server/pir/Database.java" />
         <option value="$PROJECT_DIR$/src/base/bptree/Bptree.java" />
-        <option value="$PROJECT_DIR$/src/base/bptree/INode.java" />
         <option value="$PROJECT_DIR$/src/client/debug/TestGetNodes.java" />
         <option value="$PROJECT_DIR$/disk/disk1" />
         <option value="$PROJECT_DIR$/src/server/pir/Server.java" />
@@ -117,6 +133,8 @@
         <option value="$PROJECT_DIR$/src/client/pir/ClientSideCache.java" />
         <option value="$PROJECT_DIR$/src/base/bptree/LNode.java" />
         <option value="$PROJECT_DIR$/src/base/bptree/Node.java" />
+        <option value="$PROJECT_DIR$/src/base/bptree/INode.java" />
+        <option value="$PROJECT_DIR$/src/client/pir/TreeViewClient.java" />
         <option value="$PROJECT_DIR$/src/client/pir/Client.java" />
       </list>
     </option>
@@ -180,6 +198,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -475,8 +495,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -868,7 +886,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461250113226</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Shuffle first try, still bugged">
+      <created>1461682349709</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1461682349709</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -941,11 +965,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modifica Read" />
     <MESSAGE value="Read with LOTS of NULLS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Read with LOTS of NULLS" />
+    <MESSAGE value="Shuffle first try, still bugged" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shuffle first try, still bugged" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="21" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -954,13 +979,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/disk/disk_conf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6890595">
-          <caret line="29" column="82" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wifi.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.83168316">
@@ -993,7 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,7 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.272">
           <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1105,7 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="718" column="0" selection-start-line="718" selection-start-column="0" selection-end-line="718" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1120,7 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48011363">
           <caret line="363" column="0" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,7 +1142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="976" column="16" selection-start-line="976" selection-start-column="16" selection-end-line="976" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1153,7 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.8353553">
           <caret line="405" column="18" selection-start-line="405" selection-start-column="18" selection-end-line="405" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1161,10 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9075907">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#5385#5386#0" expanded="true" />
-            <element signature="e#5408#5409#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1172,7 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05610561">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="76613" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1180,7 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49756098">
           <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,9 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="191" column="19" selection-start-line="191" selection-start-column="14" selection-end-line="191" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,7 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.266515">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1206,7 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6264237">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,7 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.78132117">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,7 +1246,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1548975">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1264,9 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34851936">
           <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-          <folding>
-            <element signature="e#1369#1381#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1282,7 +1278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.7953795">
           <caret line="72" column="44" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,20 +1331,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/bptree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83168316">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/pir/ClientSideCache.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="481" column="24" selection-start-line="481" selection-start-column="24" selection-end-line="481" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/bptree/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.37037">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/bptree/INode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
           <folding>
-            <element signature="e#8073#8079#0" expanded="true" />
+            <element signature="e#679#709#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1357,51 +1360,41 @@
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_65/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
-          <caret line="427" column="13" selection-start-line="427" selection-start-column="13" selection-end-line="427" selection-end-column="13" />
+          <caret line="456" column="19" selection-start-line="456" selection-start-column="19" selection-end-line="456" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/bptree/INode.java">
+    <entry file="file://$PROJECT_DIR$/src/client/pir/TreeViewClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="118" column="16" selection-start-line="118" selection-start-column="16" selection-end-line="118" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/pir/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5429043">
-          <caret line="1503" column="27" selection-start-line="1503" selection-start-column="27" selection-end-line="1503" selection-end-column="27" />
+        <state vertical-scroll-proportion="-10.894389">
+          <caret line="1649" column="72" selection-start-line="1649" selection-start-column="72" selection-end-line="1649" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#13400#13414#0" expanded="true" />
-            <element signature="e#14006#14012#0" expanded="true" />
-            <element signature="e#14907#14913#0" expanded="true" />
-            <element signature="e#16261#16275#0" expanded="true" />
-            <element signature="e#17018#17030#0" expanded="true" />
-            <element signature="e#22133#22147#0" expanded="true" />
-            <element signature="e#22206#22220#0" expanded="true" />
-            <element signature="e#22367#22373#0" expanded="true" />
-            <element signature="e#22458#22472#0" expanded="true" />
-            <element signature="e#33885#33891#0" expanded="true" />
-            <element signature="e#33951#33960#0" expanded="true" />
-            <element signature="e#37208#37214#0" expanded="true" />
-            <element signature="e#37388#37394#0" expanded="true" />
-            <element signature="e#37454#37460#0" expanded="true" />
-            <element signature="e#37515#37529#0" expanded="true" />
-            <element signature="e#37604#37618#0" expanded="true" />
-            <element signature="e#37739#37753#0" expanded="true" />
-            <element signature="e#37916#37930#0" expanded="true" />
-            <element signature="e#42395#42409#0" expanded="true" />
-            <element signature="e#46044#46058#0" expanded="true" />
-            <element signature="e#46962#46977#0" expanded="true" />
             <element signature="e#48434#48449#0" expanded="true" />
-            <element signature="e#52064#52078#0" expanded="true" />
-            <element signature="e#52976#52991#0" expanded="true" />
-            <element signature="e#53056#53087#0" expanded="true" />
-            <element signature="e#53185#53191#0" expanded="true" />
+            <element signature="e#53179#53185#0" expanded="true" />
+            <element signature="e#53709#53734#0" expanded="true" />
+            <element signature="e#55361#55375#0" expanded="true" />
+            <element signature="e#55437#55451#0" expanded="true" />
+            <element signature="e#55517#55531#0" expanded="true" />
+            <element signature="e#56940#56954#0" expanded="true" />
+            <element signature="e#59080#59094#0" expanded="true" />
+            <element signature="e#60467#60481#0" expanded="true" />
+            <element signature="e#60543#60557#0" expanded="true" />
+            <element signature="e#60623#60637#0" expanded="true" />
+            <element signature="e#61086#61092#0" expanded="true" />
+            <element signature="e#62046#62060#0" expanded="true" />
+            <element signature="e#65638#65652#0" expanded="true" />
+            <element signature="e#65714#65728#0" expanded="true" />
+            <element signature="e#65795#65809#0" expanded="true" />
           </folding>
         </state>
       </provider>
