@@ -42,6 +42,7 @@
     <file url="file://$PROJECT_DIR$/src/client/test/Test.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/server/command/CloseServerCommand.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/server/command/Command.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/server/command/DatabaseServerCommand.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/server/command/ExecuteServerCommand.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/server/command/StartServerCommand.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/server/command/StopServerCommand.java" charset="UTF-16" />
