@@ -23,6 +23,9 @@
     <file url="file://$PROJECT_DIR$/src/base/disk/DiskIO.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/base/disk/DiskSuperBlock.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/base/log/Log.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/command/Command.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/command/DatabaseClientCommand.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/command/ExecuteClientCommand.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/client/debug/TestCheckList.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/client/debug/TestClientSideCache.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/client/debug/TestGetNodes.java" charset="UTF-16" />
@@ -31,6 +34,7 @@
     <file url="file://$PROJECT_DIR$/src/client/debug/TestPir.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/client/debug/TestPirCSC.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/client/debug/performance/Search.java" charset="UTF-16" />
+    <file url="file://$PROJECT_DIR$/src/client/main/CommandLineClient.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/client/pir/Client.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/client/pir/ClientConfigFile.java" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/client/pir/ClientSideCache.java" charset="UTF-16" />
