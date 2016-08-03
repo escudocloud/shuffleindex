@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<filesystem encrypted="true">
+<filesystem encrypted="false">
 
 	<disk1 path="disk/disk1" >
 		<superblock offset="0" size="172"/>
@@ -8,7 +8,7 @@
 	</disk1> 
 	
 	<disk2 path="disk/disk2" >
-		<nodessector offset="0" newnodeoffset="0"/>
+		<nodessector offset="262144" newnodeoffset="262144"/>
 	</disk2>
 	
 	<disk3 path="disk/disk3" >
@@ -27,6 +27,6 @@
 
 	<key num="789884" domainstart="1" domainend="9223372036854775807"/>
 
-	<bptree rootpid="262144" height="3" innernodedegree="362"  leafnodedegree="362"  minnumkeys="100"/>
+	<bptree rootpid="262144" height="3" innernodedegree="125"  leafnodedegree="125"  minnumkeys="100"/>
 
 </filesystem>

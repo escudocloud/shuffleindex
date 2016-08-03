@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <settings>
 	<server socketport="1222" />
-	<client socketport="1222" serveraddress="54.93.183.144" />
+	<client socketport="1222" serveraddress="127.0.0.1" />
 </settings>
