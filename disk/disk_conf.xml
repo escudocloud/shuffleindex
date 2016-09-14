@@ -8,7 +8,7 @@
 	</disk1> 
 	
 	<disk2 path="disk/disk2" >
-		<nodessector offset="262144" newnodeoffset="262144"/>
+		<nodessector offset="0" newnodeoffset="0"/>
 	</disk2>
 	
 	<disk3 path="disk/disk3" >

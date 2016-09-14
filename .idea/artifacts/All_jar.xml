@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="All:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/All_jar</output-path>
+    <root id="archive" name="Pir_Single_Client_30_July_2012_sera.jar">
+      <element id="module-output" name="Pir_Single_Client_30_July_2012_sera" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/log4j-1.2.15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-daemon.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/commons-csv-1.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
